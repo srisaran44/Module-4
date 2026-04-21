@@ -12,7 +12,23 @@ To write a Python program that handles an **IndexError** when trying to access a
 
 ## 🧾 Program
 Add code here
+# Program to handle IndexError in list access
+def safe_access(lst, index):
+    try:
+        print("Element at index", index, "is:", lst[index])
+    except IndexError:
+        print("Error: Index", index, "is out of range for the list.")
+
+# Driver code
+my_list = [10, 20, 30, 40, 50]
+print("List:", my_list)
+
+pos = int(input("Enter the index to access: "))
+safe_access(my_list, pos)
+
 
 ## Output
+<img width="927" height="564" alt="image" src="https://github.com/user-attachments/assets/7b593458-3089-4b6a-934c-1523308fdd86" />
+
 
 ## Result
